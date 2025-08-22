@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --bg: 255 255 255;
+}
+body { @apply bg-gray-50 text-gray-900; }
+.card { @apply bg-white rounded-2xl shadow-sm border border-gray-200; }
+.card-header { @apply p-4 border-b border-gray-100; }
+.card-title { @apply font-semibold; }
+.card-content { @apply p-4; }
+.btn { @apply inline-flex items-center gap-2 rounded-2xl px-4 py-2 text-sm font-medium transition shadow-sm border border-transparent; }
+.btn-primary { @apply bg-blue-600 text-white hover:bg-blue-700; }
+.btn-secondary { @apply bg-gray-100 hover:bg-gray-200 text-gray-800; }
+.input { @apply w-full rounded-xl border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent bg-white; }
+.badge { @apply inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium bg-gray-100 text-gray-700; }
+.table { @apply w-full text-sm; }
+.table th { @apply text-left font-medium text-gray-500 pb-2; }
+.table td { @apply py-2; }
+.tabs { @apply grid gap-2 sm:grid-cols-4 lg:grid-cols-8; }
+.tabs button { @apply rounded-full px-3 py-1.5 text-sm border border-gray-200 bg-white hover:bg-gray-50; }
+.tabs .active { @apply bg-blue-600 text-white border-blue-600; }
+.footer { @apply text-center text-xs text-gray-500 py-6; }
